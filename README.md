@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About npstreams
 ===============
 
@@ -22,8 +18,15 @@ can be implemented in constant memory, which in turns allows for easy paralleliz
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/npstreams-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/npstreams-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4516&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/npstreams-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
