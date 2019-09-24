@@ -1,6 +1,6 @@
-{% set version = "1.6" %}
+{% set version = "1.6.1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "9a2fab6bb7f454db9c695385cab922bf0b60f032e8d9771373300ad11a090861" %}
+{% set hash_value = "111d2ccb815366ad67f38bc9530aa350f63dfd856a5ffeb279e4e4cfc0a1424f" %}
 
 package:
   name: 'npstreams'
