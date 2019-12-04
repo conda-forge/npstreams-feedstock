@@ -19,10 +19,10 @@ build:
 requirements:
   build:
     - pip
-    - python>=3.6
+    - python >=3.6
   run:
-    - python>=3.6
-    - numpy>=1.14
+    - python >=3.6
+    - numpy >=1.14
 
 test:
   requires:
