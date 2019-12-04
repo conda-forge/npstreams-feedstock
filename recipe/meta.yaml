@@ -1,6 +1,6 @@
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "111d2ccb815366ad67f38bc9530aa350f63dfd856a5ffeb279e4e4cfc0a1424f" %}
+{% set hash_value = "52d1e8db7521763135886ce1542bda4bfa6fb5bcfc591d59acd6811c218537ef" %}
 
 package:
   name: 'npstreams'
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
