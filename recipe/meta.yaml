@@ -1,6 +1,6 @@
-{% set version = "1.6.2" %}
+{% set version = "1.6.3" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "52d1e8db7521763135886ce1542bda4bfa6fb5bcfc591d59acd6811c218537ef" %}
+{% set hash_value = "93545b9b98ffa8c312094dabc7d25525e5b26809ecb53af4b6f439bbe7870c03" %}
 
 package:
   name: 'npstreams'
@@ -22,7 +22,7 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - numpy >=1.14
+    - numpy >=1.15
 
 test:
   requires:
