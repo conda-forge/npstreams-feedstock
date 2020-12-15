@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -27,10 +27,12 @@ requirements:
 test:
   requires:
     - scipy >=1.0.0
+    - pytest
   imports:
     - npstreams
   commands:
-    - python -m unittest discover -b
+    # Pytest is better at finding tests in installed packages
+    - pytest --pyargs npstreams
 
 about:
   home: https://github.com/LaurentRDC/npstreams
