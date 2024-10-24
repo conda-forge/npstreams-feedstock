@@ -1,4 +1,4 @@
-{% set version = "1.6.6" %}
+{% set version = "1.7.0" %}
 
 package:
   name: npstreams
@@ -7,7 +7,7 @@ package:
 source:
   fn: npstreams-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/n/npstreams/npstreams-{{ version }}.tar.gz
-  sha256: a475c4954914117afbc244b994b930089cebf449c2c69049302d8b31283e32fe
+  sha256: af584a5a8b1882161de2a3b25b4bbfbbee85e69da75678f1b470df0c91c157ee
 
 build:
   noarch: python
@@ -16,21 +16,19 @@ build:
 
 requirements:
   host:
+    - setuptools
     - pip
     - python >=3.7
   run:
     - python >=3.7
-    - numpy >=1.17
+    - numpy >=1.17, <3
 
 test:
   requires:
-    - scipy >=1.0.0
+    - scipy >=1.0.0, <2
     - pytest
   imports:
     - npstreams
-  commands:
-    # Pytest is better at finding tests in installed packages
-    - pytest --pyargs npstreams
 
 about:
   home: https://github.com/LaurentRDC/npstreams
