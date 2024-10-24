@@ -23,6 +23,13 @@ requirements:
     - python >=3.7
     - numpy >=1.17, <3
 
+test:
+  requires:
+    - scipy >=1.0.0, <2
+    - pytest
+  imports:
+    - npstreams
+
 about:
   home: https://github.com/LaurentRDC/npstreams
   license: BSD 3-Clause
