@@ -6,27 +6,28 @@ package:
 
 source:
   fn: npstreams-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/n/npstreams/npstreams-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/n/npstreams/npstreams-{{ version }}.tar.gz
   sha256: af584a5a8b1882161de2a3b25b4bbfbbee85e69da75678f1b470df0c91c157ee
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - setuptools
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - numpy >=1.17, <3
 
 test:
   requires:
     - scipy >=1.0.0, <2
     - pytest
+    - python {{ python_min }}
   imports:
     - npstreams
 
